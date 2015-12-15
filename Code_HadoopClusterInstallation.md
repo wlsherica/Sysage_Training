@@ -165,9 +165,10 @@ hadoop version
 Modify slaves
 ```shell
 vim hadoop/slaves
-+> dn1
-+> dn2
--> localhost
+```
+```shell
+dn1
+dn2
 ```
 
 Move configuration files to datanodes, note that masters file on slave machine is going to be empty, and the ‘slaves’ file at datanode contains only its own IP and not of any other datanode in the cluster.
